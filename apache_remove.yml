@@ -1,0 +1,9 @@
+---
+- hosts: ubuntu
+  tasks:
+  - name: Remove Apache server from Ubuntu server.
+    apt:
+     name: apache2
+     state: absent
+     update_cache: yes
+

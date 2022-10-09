@@ -1,0 +1,12 @@
+---
+- 
+  hosts: centos
+  gather_facts: true
+  tasks:
+    - 
+      name: "Uninstall HTTPD/Apache"
+      yum:
+        name: httpd
+        autoremove: yes
+        state: absent
+
