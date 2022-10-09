@@ -1,0 +1,12 @@
+---
+- name: "Chocolatey"
+  hosts: windows
+  tasks:
+    - name: Install chocolatey
+      win_chocolatey:
+          name:
+           - chocolatey
+           - chocolatey-core.extension
+           - git
+           - googlechrome
+          state: present
